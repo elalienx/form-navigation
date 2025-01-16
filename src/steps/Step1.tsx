@@ -1,7 +1,11 @@
 // Project files
 import Image from "assets/1.png";
+import { useNavigation } from "state/NavigationContext";
 
 export default function Step1() {
+  // Global state
+  const { setStep } = useNavigation();
+
   return (
     <div className="step">
       <img
@@ -9,7 +13,7 @@ export default function Step1() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
-      <button>Next ➡️</button>
+      <button onClick={() => setStep(2)}>Next ➡️</button>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function Step10() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
-      <button>Next ➡️</button>
+      <button>Submit 🏁</button>
     </div>
   );
 }
