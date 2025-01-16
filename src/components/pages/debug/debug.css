@@ -1,0 +1,14 @@
+#debug {
+  table {
+    text-align: left;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px solid #dddddd;
+    padding: 8px 16px;
+  }
+  th {
+    background-color: lightgray;
+  }
+}
