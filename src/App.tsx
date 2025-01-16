@@ -1,6 +1,6 @@
 // Project files
-import Debug from "components/pages/debug/Debug";
-import LiveDemo from "components/pages/LiveDemo";
+import Debug from "pages/debug/Debug";
+import LiveDemo from "pages/LiveDemo";
 import "./styles/style.css";
 
 export default function App() {
