@@ -1,4 +1,5 @@
 // Project files
+import { useNavigation } from "state/NavigationContext";
 import "./item-navigation.css";
 
 interface Props {
@@ -12,9 +13,13 @@ interface Props {
 export default function ItemNavigation({ item }: Props) {
   const { name, navigationLevel, step } = item;
 
+  // Global state
+  const { setStep } = useNavigation();
+
   // Methods
   function onClick() {
-    alert(`Clicked on ${name} to go to ${step}`);
+    console.log(`Clicked on ${name} to go to ${step}`);
+    setStep(step);
   }
 
   return (

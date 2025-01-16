@@ -1,7 +1,7 @@
 // Project files
-import Image from "assets/5.png";
+import Image from "assets/10.png";
 
-export default function Step5() {
+export default function Step10() {
   return (
     <div className="step">
       <img

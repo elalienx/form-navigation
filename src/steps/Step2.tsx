@@ -3,8 +3,7 @@ import Image from "assets/2.png";
 
 export default function Step2() {
   return (
-    <div id="Step2" className="step">
-      <h1>About the loan</h1>
+    <div className="step">
       <img
         className="mock-screenshot"
         src={Image}

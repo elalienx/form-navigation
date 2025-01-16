@@ -1,10 +1,9 @@
 // Project files
-import Image from "assets/1.png";
+import Image from "assets/4.png";
 
 export default function Step4() {
   return (
-    <div id="Step3" className="step">
-      <h1>About the loan</h1>
+    <div className="step">
       <img
         className="mock-screenshot"
         src={Image}
