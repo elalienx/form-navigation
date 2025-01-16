@@ -1,0 +1,9 @@
+.step-manager {
+  background-color: pink;
+  padding: 32px;
+
+  .mock-screenshot {
+    display: block;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,10 @@
+.live-demo {
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    .navigation {
+      max-width: 300px;
+    }
+  }
+}

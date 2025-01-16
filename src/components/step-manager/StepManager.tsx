@@ -5,6 +5,7 @@ import Step2 from "steps/Step2";
 import Step3 from "steps/Step3";
 import Step4 from "steps/Step4";
 import Step5 from "steps/Step5";
+import "./step-manager.css";
 
 export default function StepManager() {
   // Global state
@@ -23,5 +24,5 @@ export default function StepManager() {
   const Step = steps[step];
   const Fallback = <div>⚠️ Step not found</div>;
 
-  return <>{Step ? <Step /> : Fallback}</>;
+  return <div className="step-manager">{Step ? <Step /> : Fallback}</div>;
 }
