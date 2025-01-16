@@ -5,17 +5,17 @@ import { createContext, useContext, useState } from "react";
 const Context = createContext(null);
 
 // For the parent
-export function CartProvider({ children }) {
+export function NavigationProvider({ children }) {
   // Local state
-  const [navigationItem, setNavigationItem] = useState(0); // first item start on index 0
+  const [navigationIndex, setNavigationIndex] = useState(0); // first item start on index 0
   const [step, setStep] = useState(1);
   const [hasCoAplicant, setHasCoAplicant] = useState(false); // to toggle the secondary steps
 
   return (
     <Context.Provider
       value={{
-        navigationItem,
-        setNavigationItem,
+        navigationIndex,
+        setNavigationIndex,
         step,
         setStep,
         hasCoAplicant,
@@ -28,7 +28,7 @@ export function CartProvider({ children }) {
 }
 
 // For the children
-export function useCart() {
+export function useNavigation() {
   const context = useContext(Context);
 
   return context;
