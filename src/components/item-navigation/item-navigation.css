@@ -1,4 +1,3 @@
-/* Up */
 .item-navigation {
   background-color: transparent;
   border-radius: 8px;
@@ -6,17 +5,25 @@
   cursor: pointer;
 }
 
-/* Hover */
+/* States: */
+/* -- Hover */
 .item-navigation:hover {
   background-color: azure;
 }
 
-/* Active */
+/* -- Active */
 .item-navigation[data-state="active"] {
   background-color: darkcyan;
 }
 
-/* Completed */
+/* -- Completed */
 .item-navigation[data-state="complete"] {
   background-color: transparent;
+}
+
+/* Navigation levels */
+/* -- Secondary */
+.item-navigation.secondary::before {
+  content: "--";
+  margin-right: 4px;
 }
