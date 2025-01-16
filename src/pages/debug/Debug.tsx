@@ -3,10 +3,11 @@ import { useNavigation } from "state/NavigationContext";
 import "./debug.css";
 
 export default function Debug() {
+  // Global state
   const { navigationIndex, step, hasCoAplicant } = useNavigation();
 
-  // Derived state
-  const coApplicant = hasCoAplicant ? "Yes ✅" : "No ❌";
+  // Properties
+  const coApplicant = hasCoAplicant ? "✅" : "❌";
 
   return (
     <section id="debug">
@@ -20,15 +21,15 @@ export default function Debug() {
         </thead>
         <tbody>
           <tr>
-            <td>Current navigation item active</td>
+            <td>navigationIndex</td>
             <td>{navigationIndex}</td>
           </tr>
           <tr>
-            <td>Current step active</td>
+            <td>step</td>
             <td>{step}</td>
           </tr>
           <tr>
-            <td>Does the applicant has a co-applicant?</td>
+            <td>hasCoAplicant</td>
             <td>{coApplicant}</td>
           </tr>
         </tbody>

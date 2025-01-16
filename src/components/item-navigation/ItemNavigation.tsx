@@ -5,7 +5,7 @@ interface Props {
   item: {
     name: string;
     navigationLevel: string;
-    step: string;
+    step: number;
   };
 }
 
