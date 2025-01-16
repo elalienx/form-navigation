@@ -1,5 +1,5 @@
 // Project files
-import Image from "assets/10.png";
+import Image from "assets/10_incomplete.png";
 
 export default function Step10() {
   return (

@@ -1,7 +1,8 @@
 .live-demo {
   .container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    border: solid 2px black;
 
     .navigation {
       max-width: 300px;
