@@ -1,6 +1,7 @@
 // Project files
 import data from "data/steps.json";
-import ItemNavigation from "./ItemNavigation";
+import ItemNavigation from "../item-navigation/ItemNavigation";
+import "./navigation.css";
 
 export default function Navigation() {
   // Components

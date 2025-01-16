@@ -1,3 +1,6 @@
+// Project files
+import "./item-navigation.css";
+
 interface Props {
   item: {
     name: string;

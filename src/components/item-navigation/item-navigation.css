@@ -1,0 +1,22 @@
+/* Up */
+.item-navigation {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* Hover */
+.item-navigation:hover {
+  background-color: azure;
+}
+
+/* Active */
+.item-navigation[data-state="active"] {
+  background-color: darkcyan;
+}
+
+/* Completed */
+.item-navigation[data-state="complete"] {
+  background-color: transparent;
+}
