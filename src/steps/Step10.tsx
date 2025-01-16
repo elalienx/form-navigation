@@ -1,5 +1,5 @@
 // Project files
-import Image from "assets/10_incomplete.png";
+import Image from "assets/10.png";
 
 export default function Step10() {
   return (
@@ -9,7 +9,7 @@ export default function Step10() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
-      <button>Submit 🏁</button>
+      <button onClick={() => alert("Form complete 🎉")}>Submit 🏁</button>
     </div>
   );
 }
