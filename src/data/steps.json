@@ -1,61 +1,61 @@
 [
   {
-    "name": "About the loan",
+    "name": "1. About the loan",
     "navigationLevel": "primary",
     "step": 1
   },
   {
-    "name": "About the home",
+    "name": "2. About the home",
     "navigationLevel": "primary",
     "step": 2
   },
   {
-    "name": "Personal data",
+    "name": "3. Personal data",
     "navigationLevel": "primary",
     "step": 3
   },
   {
-    "name": "Your personal data",
+    "name": "-- Your personal data",
     "navigationLevel": "secondary",
     "step": 3
   },
   {
-    "name": "Co-applicant's personal data",
+    "name": "-- Co-applicant's personal data",
     "navigationLevel": "secondary",
     "step": 4
   },
   {
-    "name": "Work situation",
+    "name": "4. Work situation",
     "navigationLevel": "primary",
     "step": 5
   },
   {
-    "name": "Your work situation",
+    "name": "-- Your work situation",
     "navigationLevel": "secondary",
     "step": 5
   },
   {
-    "name": "Co-applicant's work situation",
+    "name": "-- Co-applicant's work situation",
     "navigationLevel": "secondary",
     "step": 6
   },
   {
-    "name": "About the household",
+    "name": "5. About the household",
     "navigationLevel": "primary",
     "step": 7
   },
   {
-    "name": "Cars and homes",
+    "name": "6. Cars and homes",
     "navigationLevel": "primary",
     "step": 8
   },
   {
-    "name": "Other loan and credits",
+    "name": "7. Other loan and credits",
     "navigationLevel": "primary",
     "step": 9
   },
   {
-    "name": "Summary",
+    "name": "8. Summary",
     "navigationLevel": "primary",
     "step": 10
   }

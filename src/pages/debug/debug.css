@@ -1,4 +1,8 @@
 #debug {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+
   table {
     text-align: left;
     border-collapse: collapse;
@@ -10,5 +14,9 @@
   }
   th {
     background-color: lightgray;
+  }
+
+  small {
+    color: gray;
   }
 }

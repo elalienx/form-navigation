@@ -11,7 +11,6 @@ export default function Debug() {
 
   return (
     <section id="debug">
-      <h2>🐞 Debug</h2>
       <table>
         <thead>
           <tr>
@@ -34,10 +33,7 @@ export default function Debug() {
           </tr>
         </tbody>
       </table>
-      <small>
-        ℹ️ This is only for developers, so we can track what is happening behind
-        the scenes to catch any errors.
-      </small>
+      <small>ℹ️ This table is only for developers.</small>
     </section>
   );
 }

@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 
-/* States: */
+/* STATES */
 /* -- Hover */
 .item-navigation:hover {
   background-color: azure;
@@ -21,9 +21,10 @@
   background-color: transparent;
 }
 
-/* Navigation levels */
+/* NAVIGATION LEVEL */
 /* -- Secondary */
-.item-navigation.secondary::before {
-  content: "--";
-  margin-right: 4px;
+.item-navigation.secondary {
+  padding-left: 24px;
+  font-size: small;
+  color: gray;
 }

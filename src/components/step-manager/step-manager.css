@@ -1,6 +1,5 @@
 .step-manager {
-  background-color: pink;
-  padding: 32px;
+  padding: 16px 32px;
 
   .mock-screenshot {
     width: 50%;
