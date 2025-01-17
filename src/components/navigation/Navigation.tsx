@@ -15,7 +15,7 @@ export default function Navigation() {
     // Safeguard
     if (!hasCoAplicant && !isPrimary) return;
 
-    return <ItemNavigation key={index} item={item} />;
+    return <ItemNavigation key={index} item={item} index={index} />;
   });
 
   return (

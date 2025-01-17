@@ -8,22 +8,31 @@ interface Props {
     navigationLevel: string;
     step: number;
   };
+  index: number;
 }
 
-export default function ItemNavigation({ item }: Props) {
+export default function ItemNavigation({ item, index }: Props) {
   const { name, navigationLevel, step } = item;
 
   // Global state
-  const { setStep } = useNavigation();
+  const { setStep, navigationIndex, setNavigationIndex } = useNavigation();
+
+  // Properties
+  const isActive = navigationIndex === index;
+  const activeCSS = isActive ? "active" : "";
 
   // Methods
   function onClick() {
     console.log(`Clicked on ${name} to go to ${step}`);
+    setNavigationIndex(index);
     setStep(step);
   }
 
   return (
-    <li className={`item-navigation ${navigationLevel}`} onClick={onClick}>
+    <li
+      className={`item-navigation ${navigationLevel} ${activeCSS}`}
+      onClick={onClick}
+    >
       {name}
     </li>
   );

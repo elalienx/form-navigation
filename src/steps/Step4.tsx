@@ -11,7 +11,7 @@ export default function Step4() {
 
   return (
     <div className="step">
-      <h3>Co=applicant's personal data</h3>
+      <h3>Co-applicant's personal data</h3>
       <img
         className="mock-screenshot"
         src={Image}

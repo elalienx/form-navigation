@@ -8,16 +8,17 @@
 /* STATES */
 /* -- Hover */
 .item-navigation:hover {
-  background-color: azure;
+  background-color: #e3f6ea;
 }
 
 /* -- Active */
-.item-navigation[data-state="active"] {
-  background-color: darkcyan;
+.item-navigation.active {
+  background-color: #2ac768;
+  color: white;
 }
 
 /* -- Completed */
-.item-navigation[data-state="complete"] {
+.item-navigation.complete {
   background-color: transparent;
 }
 
@@ -26,5 +27,4 @@
 .item-navigation.secondary {
   padding-left: 24px;
   font-size: small;
-  color: gray;
 }
