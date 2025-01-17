@@ -8,6 +8,7 @@ export default function Step2() {
 
   return (
     <div className="step">
+      <h3>About the home</h3>
       <img
         className="mock-screenshot"
         src={Image}

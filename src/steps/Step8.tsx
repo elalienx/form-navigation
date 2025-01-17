@@ -8,6 +8,7 @@ export default function Step8() {
 
   return (
     <div className="step">
+      <h3>Cars and homes</h3>
       <img
         className="mock-screenshot"
         src={Image}

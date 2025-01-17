@@ -8,6 +8,7 @@ export default function Step9() {
 
   return (
     <div className="step">
+      <h3>Other loan and credits</h3>
       <img
         className="mock-screenshot"
         src={Image}

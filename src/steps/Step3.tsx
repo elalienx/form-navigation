@@ -2,15 +2,19 @@
 import Image from "assets/3.png";
 import { useNavigation } from "state/NavigationContext";
 
+/**
+ * This step decides the formulary lenght based if the applicant has a co-applicant.
+ */
 export default function Step3() {
   // Global state
   const { setStep, hasCoAplicant, setHasCoAplicant } = useNavigation();
 
   // Properties
-  const nextStep = hasCoAplicant ? 4 : 5;
+  const nextStep: number = hasCoAplicant ? 4 : 5;
 
   return (
     <div className="step">
+      <h3>Your personal data</h3>
       <img
         className="mock-screenshot"
         src={Image}
