@@ -15,6 +15,9 @@ import Step9 from "steps/Step9";
 import Step10 from "steps/Step10";
 import "./step-manager.css";
 
+/**
+ * Handles mounting Formulator's current form to display. It does not mutate data, only reacts to it.
+ */
 export default function StepManager() {
   // Global state
   const { stepToGo } = useNavigation();

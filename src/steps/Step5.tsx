@@ -7,10 +7,30 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step5() {
   // Global state
-  const { setStep, hasCoAplicant } = useNavigation();
+  const {
+    stepToGo,
+    setStepToGo,
+    hasCoAplicant,
+    setHasCoAplicant,
+    setNavigationIndex,
+  } = useNavigation();
 
-  // Properties
-  const nextStep: number = hasCoAplicant ? 6 : 7;
+  // Methods
+  function onSubmit() {
+    validateForm();
+    nextStep();
+  }
+
+  function validateForm() {
+    console.log(`Validating form step #${stepToGo}`);
+  }
+
+  function nextStep() {
+    const nextStep: number = hasCoAplicant ? 6 : 7;
+
+    setNavigationIndex(2);
+    setStepToGo(nextStep);
+  }
 
   return (
     <div className="step">
@@ -20,7 +40,7 @@ export default function Step5() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
-      <button onClick={() => setStep(nextStep)}>Next ➡️</button>
+      <button onClick={onSubmit}>Next ➡️</button>
     </div>
   );
 }

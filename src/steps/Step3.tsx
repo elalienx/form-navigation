@@ -7,10 +7,31 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step3() {
   // Global state
-  const { setStep, hasCoAplicant, setHasCoAplicant } = useNavigation();
+  const {
+    stepToGo,
+    setStepToGo,
+    hasCoAplicant,
+    setHasCoAplicant,
+    setNavigationIndex,
+  } = useNavigation();
 
-  // Properties
-  const nextStep: number = hasCoAplicant ? 4 : 5;
+  // Methods
+  function onSubmit() {
+    validateForm();
+    nextStep();
+  }
+
+  function validateForm() {
+    console.log(`Validating form step #${stepToGo}`);
+  }
+
+  function nextStep() {
+    const navigationIndex: number = hasCoAplicant ? 3 : 5;
+    const stepToGo: number = hasCoAplicant ? 4 : 5;
+
+    setNavigationIndex(navigationIndex);
+    setStepToGo(stepToGo);
+  }
 
   return (
     <div className="step">
@@ -27,7 +48,7 @@ export default function Step3() {
         <button onClick={() => setHasCoAplicant(false)}>No</button>
       </div>
       <hr />
-      <button onClick={() => setStep(nextStep)}>Next ➡️</button>
+      <button onClick={onSubmit}>Next ➡️</button>
     </div>
   );
 }

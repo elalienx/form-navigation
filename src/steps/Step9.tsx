@@ -4,7 +4,22 @@ import { useNavigation } from "state/NavigationContext";
 
 export default function Step9() {
   // Global state
-  const { setStep } = useNavigation();
+  const { stepToGo, setStepToGo, setNavigationIndex } = useNavigation();
+
+  // Methods
+  function onSubmit() {
+    validateForm();
+    nextStep();
+  }
+
+  function validateForm() {
+    console.log(`Validating form step #${stepToGo}`);
+  }
+
+  function nextStep() {
+    setNavigationIndex(9);
+    setStepToGo(10);
+  }
 
   return (
     <div className="step">
@@ -14,7 +29,7 @@ export default function Step9() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
-      <button onClick={() => setStep(10)}>Next ➡️</button>
+      <button onClick={onSubmit}>Next ➡️</button>
     </div>
   );
 }

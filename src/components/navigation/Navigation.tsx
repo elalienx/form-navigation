@@ -4,6 +4,9 @@ import ItemNavigation from "components/item-navigation/ItemNavigation";
 import { useNavigation } from "state/NavigationContext";
 import "./navigation.css";
 
+/**
+ * Handles mounting Formulator's navigation system. It does not mutate data, only reacts to it.
+ */
 export default function Navigation() {
   // Global state
   const { hasCoAplicant } = useNavigation();
