@@ -26,7 +26,7 @@ export default function Step5() {
   }
 
   function nextStep() {
-    const navigationIndex: number = hasCoAplicant ? 5 : 8;
+    const navigationIndex: number = hasCoAplicant ? 7 : 8;
     const stepToGo: number = hasCoAplicant ? 6 : 7;
 
     setNavigationIndex(navigationIndex);

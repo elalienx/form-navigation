@@ -20,7 +20,7 @@ export default function Step6() {
   }
 
   function nextStep() {
-    setNavigationIndex(6);
+    setNavigationIndex(8);
     setStepToGo(7);
   }
 

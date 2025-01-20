@@ -19,6 +19,8 @@ Navigation bullet states to tackle what steps have been completed:
 
 # Polish
 
+- Rename stepToGo() and setStepToGo() to stepNumber() setStepNumber()
+- Rename navigationIndex() and setNavigationIndex() to navigationItemNumber() and setNavigationItemNumber()
 - Add Lendo's blue button.
 - Add icons.
 - Add badge for bullet states.
