@@ -12,7 +12,7 @@ export default function ItemNavigation({ item, index }: Props) {
   const { title, navigationLevel, stepToGo } = item;
 
   // Global state
-  const { setStep, navigationIndex, setNavigationIndex } = useNavigation();
+  const { setStepToGo, navigationIndex, setNavigationIndex } = useNavigation();
 
   // Properties
   const isActive = navigationIndex === index;
@@ -22,7 +22,7 @@ export default function ItemNavigation({ item, index }: Props) {
   function onClick() {
     console.log(`Clicked on ${title} to go to ${stepToGo}`);
     setNavigationIndex(index);
-    setStep(stepToGo);
+    setStepToGo(stepToGo);
   }
 
   return (

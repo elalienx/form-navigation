@@ -1,3 +1,6 @@
+// Node modules
+import { ReactElement } from "react";
+
 // Project files
 import { useNavigation } from "state/NavigationContext";
 import Step1 from "steps/Step1";
@@ -14,25 +17,27 @@ import "./step-manager.css";
 
 export default function StepManager() {
   // Global state
-  const { step } = useNavigation();
+  const { stepToGo } = useNavigation();
 
   // Properties
   const steps = {
-    1: Step1,
-    2: Step2,
-    3: Step3,
-    4: Step4,
-    5: Step5,
-    6: Step6,
-    7: Step7,
-    8: Step8,
-    9: Step9,
-    10: Step10,
+    1: <Step1 />,
+    2: <Step2 />,
+    3: <Step3 />,
+    4: <Step4 />,
+    5: <Step5 />,
+    6: <Step6 />,
+    7: <Step7 />,
+    8: <Step8 />,
+    9: <Step9 />,
+    10: <Step10 />,
   };
 
-  // Dynamically get the component
-  const Step = steps[step];
-  const Fallback = <div>⚠️ Step not found</div>;
+  // Components
+  const Step: ReactElement = steps[stepToGo];
 
-  return <div className="step-manager">{Step ? <Step /> : Fallback}</div>;
+  // Safeguard
+  if (!Step) return <div>⚠️ Step not found</div>;
+
+  return <div className="step-manager">{Step}</div>;
 }

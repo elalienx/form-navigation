@@ -8,7 +8,7 @@ const Context = createContext(null);
 export function NavigationProvider({ children }) {
   // Local state
   const [navigationIndex, setNavigationIndex] = useState(0); // first item start on index 0
-  const [step, setStep] = useState(1);
+  const [stepToGo, setStepToGo] = useState(1);
   const [hasCoAplicant, setHasCoAplicant] = useState(false); // to toggle the secondary steps
 
   return (
@@ -16,8 +16,8 @@ export function NavigationProvider({ children }) {
       value={{
         navigationIndex,
         setNavigationIndex,
-        step,
-        setStep,
+        stepToGo,
+        setStepToGo,
         hasCoAplicant,
         setHasCoAplicant,
       }}
