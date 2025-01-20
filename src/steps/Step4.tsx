@@ -1,5 +1,6 @@
 // Project files
 import Image from "assets/4.png";
+import Button from "components/button/Button";
 import { useNavigation } from "state/NavigationContext";
 
 /**
@@ -32,7 +33,9 @@ export default function Step4() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
-      <button onClick={onSubmit}>Next ➡️</button>
+      <Button icon={"arrow-right"} onClick={onSubmit}>
+        Next
+      </Button>
     </div>
   );
 }

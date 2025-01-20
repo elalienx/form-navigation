@@ -23,11 +23,17 @@ interface Props {
   icon: string;
 }
 
-export default function Button({ children, onClick, disabled, icon_prefix = "fas", icon }: Props) {
+export default function Button({
+  children,
+  onClick,
+  disabled,
+  icon_prefix = "fas",
+  icon,
+}: Props) {
   return (
     <button className="button" disabled={disabled} onClick={onClick}>
-      {icon && <FontAwesomeIcon icon={[icon_prefix, icon]} />}
       {children}
+      {icon && <FontAwesomeIcon icon={[icon_prefix, icon]} />}
     </button>
   );
 }

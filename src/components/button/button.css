@@ -5,13 +5,13 @@
   background-color: var(--color-blue);
   color: white;
   border: transparent;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-small);
   font-size: var(--font-size-normal);
   font-weight: var(--font-weight-bold);
   cursor: pointer;
 
   .icon {
-    margin-right: var(--space-small);
+    margin-left: var(--space-small);
   }
 }
 

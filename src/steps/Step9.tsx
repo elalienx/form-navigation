@@ -1,5 +1,6 @@
 // Project files
 import Image from "assets/9.png";
+import Button from "components/button/Button";
 import { useNavigation } from "state/NavigationContext";
 
 export default function Step9() {
@@ -29,7 +30,9 @@ export default function Step9() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
-      <button onClick={onSubmit}>Next ➡️</button>
+      <Button icon={"arrow-right"} onClick={onSubmit}>
+        Next
+      </Button>
     </div>
   );
 }

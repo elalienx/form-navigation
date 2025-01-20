@@ -3,7 +3,7 @@
 .item-navigation {
   background-color: transparent;
   border-radius: var(--space-small);
-  padding: var(--space-small);
+  padding: var(--space-small) var(--space-medium);
   cursor: pointer;
 }
 /* -- 1.2 Secondary */

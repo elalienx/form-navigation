@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 // Project files
 import Image from "assets/3.png";
+import Button from "components/button/Button";
 import { useNavigation } from "state/NavigationContext";
 
 /**
@@ -56,7 +57,9 @@ export default function Step3() {
         <button onClick={() => setHasCoAplicant(true)}>Yes</button>
         <button onClick={() => setHasCoAplicant(false)}>No</button>
       </div>
-      <button onClick={onSubmit}>Next ➡️</button>
+      <Button icon={"arrow-right"} onClick={onSubmit}>
+        Next
+      </Button>
     </div>
   );
 }

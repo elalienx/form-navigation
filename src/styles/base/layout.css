@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 9fr;
   overflow: hidden; /** so the border radius crops the children's background color */
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-big);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 12px 0px;
 
   .navigation {
