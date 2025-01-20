@@ -1,61 +1,61 @@
 [
   {
-    "name": "1. About the loan",
+    "title": "1. About the loan",
     "navigationLevel": "primary",
     "stepToGo": 1
   },
   {
-    "name": "2. About the home",
+    "title": "2. About the home",
     "navigationLevel": "primary",
     "stepToGo": 2
   },
   {
-    "name": "3. Personal data",
+    "title": "3. Personal data",
     "navigationLevel": "primary",
     "stepToGo": 3
   },
   {
-    "name": "-- Your personal data",
+    "title": "-- Your personal data",
     "navigationLevel": "secondary",
     "stepToGo": 3
   },
   {
-    "name": "-- Co-applicant's personal data",
+    "title": "-- Co-applicant's personal data",
     "navigationLevel": "secondary",
     "stepToGo": 4
   },
   {
-    "name": "4. Work situation",
+    "title": "4. Work situation",
     "navigationLevel": "primary",
     "stepToGo": 5
   },
   {
-    "name": "-- Your work situation",
+    "title": "-- Your work situation",
     "navigationLevel": "secondary",
     "stepToGo": 5
   },
   {
-    "name": "-- Co-applicant's work situation",
+    "title": "-- Co-applicant's work situation",
     "navigationLevel": "secondary",
     "stepToGo": 6
   },
   {
-    "name": "5. About the household",
+    "title": "5. About the household",
     "navigationLevel": "primary",
     "stepToGo": 7
   },
   {
-    "name": "6. Cars and homes",
+    "title": "6. Cars and homes",
     "navigationLevel": "primary",
     "stepToGo": 8
   },
   {
-    "name": "7. Other loan and credits",
+    "title": "7. Other loan and credits",
     "navigationLevel": "primary",
     "stepToGo": 9
   },
   {
-    "name": "8. Summary",
+    "title": "8. Summary",
     "navigationLevel": "primary",
     "stepToGo": 10
   }

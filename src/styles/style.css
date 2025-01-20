@@ -1,6 +1,9 @@
-.app {
+body {
   font-family: "Circular Pro", Helvetica, Arial, sans-serif;
+  color: #1f1f1f;
+}
+
+.app {
   max-width: 960px;
   margin: 0 auto;
-  color: #1f1f1f;
 }

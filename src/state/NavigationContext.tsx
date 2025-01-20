@@ -30,6 +30,10 @@ export function NavigationProvider({ children }) {
 // For the children
 export function useNavigation() {
   const context = useContext(Context);
+  const errorMessage = `This component is using global state from useNavigation(). Ensure that it is wrapped with a NavigationProvider.`;
+
+  // Safeguard
+  if (!context) throw new Error(errorMessage);
 
   return context;
 }

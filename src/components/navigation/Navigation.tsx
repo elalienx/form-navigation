@@ -1,8 +1,8 @@
 // Project files
 import data from "data/steps.json";
-import ItemNavigation from "../item-navigation/ItemNavigation";
-import "./navigation.css";
+import ItemNavigation from "components/item-navigation/ItemNavigation";
 import { useNavigation } from "state/NavigationContext";
+import "./navigation.css";
 
 export default function Navigation() {
   // Global state
