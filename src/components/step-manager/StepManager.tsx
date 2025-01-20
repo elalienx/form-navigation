@@ -20,7 +20,7 @@ import "./step-manager.css";
  */
 export default function StepManager() {
   // Global state
-  const { stepToGo } = useNavigation();
+  const { stepNumber } = useNavigation();
 
   // Properties
   const steps = {
@@ -37,7 +37,7 @@ export default function StepManager() {
   };
 
   // Components
-  const Step: ReactElement = steps[stepToGo];
+  const Step: ReactElement = steps[stepNumber];
 
   // Safeguard
   if (!Step) return <div>⚠️ Step not found</div>;

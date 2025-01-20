@@ -12,8 +12,8 @@ import { useNavigation } from "state/NavigationContext";
 export default function Step3() {
   // Global state
   const {
-    stepToGo,
-    setStepToGo,
+    stepNumber,
+    setStepNumber,
     hasCoAplicant,
     setHasCoAplicant,
     setNavigationIndex,
@@ -32,15 +32,15 @@ export default function Step3() {
   }
 
   function validateForm() {
-    console.log(`Validating form step #${stepToGo}`);
+    console.log(`Validating form step #${stepNumber}`);
   }
 
   function nextStep() {
     const navigationIndex: number = hasCoAplicant ? 4 : 5;
-    const stepToGo: number = hasCoAplicant ? 4 : 5;
+    const stepNumber: number = hasCoAplicant ? 4 : 5;
 
     setNavigationIndex(navigationIndex);
-    setStepToGo(stepToGo);
+    setStepNumber(stepNumber);
   }
 
   return (

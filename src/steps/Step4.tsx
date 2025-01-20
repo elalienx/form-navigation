@@ -8,7 +8,7 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step4() {
   // Global state
-  const { stepToGo, setStepToGo, setNavigationIndex } = useNavigation();
+  const { stepNumber, setStepNumber, setNavigationIndex } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -17,12 +17,12 @@ export default function Step4() {
   }
 
   function validateForm() {
-    console.log(`Validating form step #${stepToGo}`);
+    console.log(`Validating form step #${stepNumber}`);
   }
 
   function nextStep() {
     setNavigationIndex(5);
-    setStepToGo(5);
+    setStepNumber(5);
   }
 
   return (
