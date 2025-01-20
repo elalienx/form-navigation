@@ -1,3 +1,6 @@
+// Node modules
+import { useEffect } from "react";
+
 // Project files
 import Image from "assets/5.png";
 import { useNavigation } from "state/NavigationContext";
@@ -7,15 +10,16 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step5() {
   // Global state
-  const {
-    stepToGo,
-    setStepToGo,
-    hasCoAplicant,
-    setHasCoAplicant,
-    setNavigationIndex,
-  } = useNavigation();
+  const { stepToGo, setStepToGo, hasCoAplicant, setNavigationIndex } =
+    useNavigation();
 
   // Methods
+  useEffect(() => {
+    const overrideNavigation = hasCoAplicant ? 6 : 5;
+
+    setNavigationIndex(overrideNavigation);
+  }, [hasCoAplicant]);
+
   function onSubmit() {
     validateForm();
     nextStep();
