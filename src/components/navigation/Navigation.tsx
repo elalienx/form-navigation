@@ -9,16 +9,23 @@ import "./navigation.css";
  */
 export default function Navigation() {
   // Global state
-  const { hasCoAplicant } = useNavigation(); // this must come from from data global state
+  const { navigationItemId, setNavigationItemId, setStepNumber, hasCoAplicant } = useNavigation();
+
+  // Methods
+  function onItemClick(navigationItemId: string, stepNumber: number) {
+    setNavigationItemId(navigationItemId);
+    setStepNumber(stepNumber);
+  }
 
   // Components
   const Items = data.map((item) => {
     const isPrimary = item.navigationLevel === "primary";
+    const isActive = navigationItemId === item.id;
 
     // Safeguard
     if (!hasCoAplicant && !isPrimary) return;
 
-    return <ItemNavigation key={item.id} item={item} />;
+    return <ItemNavigation key={item.id} item={item} onClick={onItemClick} isActive={isActive} />;
   });
 
   return (

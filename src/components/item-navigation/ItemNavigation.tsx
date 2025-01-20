@@ -4,32 +4,26 @@ import Navigation from "types/Navigation";
 import "./item-navigation.css";
 
 interface Props {
+  /** The object with the information to display the item. */
   item: Navigation;
+
+  /** Flag to highlight the item if active */
+  isActive?: boolean;
+
+  /** The actions we want to perform on click */
+  onClick: (navigationItemId: string, stepNumber: number) => void;
 }
 
-export default function ItemNavigation({ item }: Props) {
+export default function ItemNavigation({ item, isActive = false, onClick }: Props) {
   const { id, title, navigationLevel, stepToGo } = item;
 
-  // Global state
-  const { setStepNumber, navigationItemId, setNavigationItemId } =
-    useNavigation();
-
   // Properties
-  /** 🔔 Refactor: Pass navigationItemId as prop  */
-  const isActive = navigationItemId === id;
   const activeCSS = isActive ? "active" : "";
-
-  // Methods
-  /** 🔔 Refactor: Extract this to Navigation.tsx */
-  function onClick() {
-    setNavigationItemId(id);
-    setStepNumber(stepToGo);
-  }
 
   return (
     <li
       className={`item-navigation ${navigationLevel} ${activeCSS}`}
-      onClick={onClick}
+      onClick={() => onClick(id, stepToGo)}
     >
       {title}
     </li>
