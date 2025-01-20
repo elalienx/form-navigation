@@ -21,13 +21,13 @@ Navigation bullet states to tackle what steps have been completed:
 
 - Allow `NavigationProvider` to start with any data configuration to show `<Navigator/>` with or withouth secondary items.
 - Block and gray out the items in the navigation bar that come after the last step that is completed. So users cannot navigate to the end and skip steps.
+- Make "co-applicant" start as un-selected on step #3.
 - Add Playwright to deeply test the App and make sure it goes to the correct steps.
 
 # Polish
 
-- Add Lendo's blue button.
-- Add icons.
+- Add badge for bullet states.
+
 - switch from using numbers and indexes for step and navigation to labels, to make it easier to understand.
 - Rename stepToGo() and setStepToGo() to stepNumber() setStepNumber()
 - Rename navigationIndex() and setNavigationIndex() to navigationItemNumber() and setNavigationItemNumber()
-- Add badge for bullet states.

@@ -20,15 +20,15 @@ export default function Debug() {
         </thead>
         <tbody>
           <tr>
-            <td>navigationIndex</td>
+            <td>Navigation index</td>
             <td>{navigationIndex}</td>
           </tr>
           <tr>
-            <td>stepToGo</td>
+            <td>Step</td>
             <td>{stepToGo}</td>
           </tr>
           <tr>
-            <td>hasCoAplicant</td>
+            <td>Has co-applicant?</td>
             <td>{coApplicant}</td>
           </tr>
         </tbody>

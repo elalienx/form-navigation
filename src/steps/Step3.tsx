@@ -54,8 +54,26 @@ export default function Step3() {
       {/* Co Applicant question which alters the lengh of the whole formulary */}
       <div className="question-co-applicant">
         <p>Do you have a co-applicant?</p>
-        <button onClick={() => setHasCoAplicant(true)}>Yes</button>
-        <button onClick={() => setHasCoAplicant(false)}>No</button>
+        <label>
+          <input
+            type="radio"
+            name="coApplicant"
+            value="yes"
+            checked={hasCoAplicant === true}
+            onChange={() => setHasCoAplicant(true)}
+          />
+          Yes
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="coApplicant"
+            value="no"
+            checked={hasCoAplicant === false}
+            onChange={() => setHasCoAplicant(false)}
+          />
+          No
+        </label>
       </div>
       <Button icon={"arrow-right"} onClick={onSubmit}>
         Next
