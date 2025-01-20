@@ -19,10 +19,9 @@ Navigation bullet states to tackle what steps have been completed:
 
 # To do
 
-- Rename stepNumber() to stepNumber()
-- Allow `NavigationProvider` to start with any data configuration to show `<Navigator/>` with or withouth secondary items.
-- Block and gray out the items in the navigation bar that come after the last step that is completed. So users cannot navigate to the end and skip steps.
-- Make "co-applicant" start as un-selected on step #3.
-- Add Playwright to deeply test the App and make sure it goes to the correct steps.
 - Add badge for bullet states.
-- switch from using numbers and indexes for step and navigation to labels, to make it easier to understand.
+- Allow `NavigationProvider` to start with any data configuration to show `<Navigator/>` with or withouth secondary items.
+- Block items in the navigation bar that come after the lastest completed step. So users cannot skip incomplete steps.
+- Make "co-applicant" start as un-selected on step #3. So users are forced to choose betweem YES/NO.
+- Switch from using numbers and indexes for step and navigation to labels, to make it easier to understand.
+- Add Playwright to deeply test the App and make sure it goes to the correct steps.

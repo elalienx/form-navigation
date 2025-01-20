@@ -7,7 +7,7 @@ import "./styles/style.css";
 export default function App() {
   return (
     <div className="app">
-      <h1>Formulator</h1>
+      <h1>Form navigator</h1>
       <p>
         This is a UX experimentation for testing formulary navigations. Do not
         submit sensitive data in it.
