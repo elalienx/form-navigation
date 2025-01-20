@@ -20,4 +20,5 @@ export default {
       <Navigation />
     </Decorator>
   ),
+  WithSecondaryItems: <p>⚠️ Pending</p>,
 };
