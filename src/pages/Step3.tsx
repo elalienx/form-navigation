@@ -11,7 +11,7 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step3() {
   // Global state
-  const { stepNumber, setStepNumber, hasCoAplicant, setHasCoAplicant, setNavigationItemId } =
+  const { stepId, setStepId, hasCoAplicant, setHasCoAplicant, setNavigationItemId } =
     useNavigation();
 
   // Methods
@@ -27,15 +27,17 @@ export default function Step3() {
   }
 
   function validateForm() {
-    console.log(`Validating form step #${stepNumber}`);
+    console.log(`Validating form step #${stepId}`);
   }
 
   function nextStep() {
     const navigationItemId = hasCoAplicant ? "co-applicant-personal-data" : "work-situation";
-    const stepNumber: number = hasCoAplicant ? 4 : 5;
+    const stepId = hasCoAplicant
+      ? "step-co-applicant-personal-data"
+      : "step-applicant-work-situation";
 
     setNavigationItemId(navigationItemId);
-    setStepNumber(stepNumber);
+    setStepId(stepId);
   }
 
   return (

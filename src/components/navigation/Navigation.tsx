@@ -9,12 +9,12 @@ import "./navigation.css";
  */
 export default function Navigation() {
   // Global state
-  const { navigationItemId, setNavigationItemId, setStepNumber, hasCoAplicant } = useNavigation();
+  const { navigationItemId, setNavigationItemId, setStepId, hasCoAplicant } = useNavigation();
 
   // Methods
-  function onItemClick(navigationItemId: string, stepNumber: number) {
+  function onItemClick(navigationItemId: string, stepId: string) {
     setNavigationItemId(navigationItemId);
-    setStepNumber(stepNumber);
+    setStepId(stepId);
   }
 
   // Components

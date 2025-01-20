@@ -20,24 +20,24 @@ import "./step-manager.css";
  */
 export default function StepManager() {
   // Global state
-  const { stepNumber } = useNavigation();
+  const { stepId } = useNavigation();
 
   // Properties
   const steps = {
-    1: <Step1 />,
-    2: <Step2 />,
-    3: <Step3 />,
-    4: <Step4 />,
-    5: <Step5 />,
-    6: <Step6 />,
-    7: <Step7 />,
-    8: <Step8 />,
-    9: <Step9 />,
-    10: <Step10 />,
+    "step-about-the-loan": <Step1 />,
+    "step-about-the-home": <Step2 />,
+    "step-applicant-personal-data": <Step3 />,
+    "step-co-applicant-personal-data": <Step4 />,
+    "step-applicant-work-situation": <Step5 />,
+    "step-co-applicant-work-situation": <Step6 />,
+    "step-about-the-household": <Step7 />,
+    "step-cars-and-homes": <Step8 />,
+    "step-other-loan-and-credits": <Step9 />,
+    "step-summary": <Step10 />,
   };
 
   // Components
-  const Step: ReactElement = steps[stepNumber];
+  const Step: ReactElement = steps[stepId];
 
   // Safeguard
   if (!Step) return <div>⚠️ Step not found</div>;

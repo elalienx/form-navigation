@@ -5,7 +5,7 @@ import { useNavigation } from "state/NavigationContext";
 
 export default function Step8() {
   // Global state
-  const { stepNumber, setStepNumber, setNavigationItemId } = useNavigation();
+  const { stepNumber, setStepId, setNavigationItemId } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -19,7 +19,7 @@ export default function Step8() {
 
   function nextStep() {
     setNavigationItemId("other-loan-and-credits");
-    setStepNumber(9);
+    setStepId("step-other-loan-and-credits");
   }
 
   return (

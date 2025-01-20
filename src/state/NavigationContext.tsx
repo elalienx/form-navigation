@@ -8,7 +8,7 @@ const Context = createContext(null);
 export function NavigationProvider({ children }) {
   // Local state
   const [navigationItemId, setNavigationItemId] = useState("about-the-loan");
-  const [stepNumber, setStepNumber] = useState(1);
+  const [stepId, setStepId] = useState("step-about-the-loan");
   const [hasCoAplicant, setHasCoAplicant] = useState(false); // to toggle the secondary steps, this should not be here but on the form data global state
 
   return (
@@ -16,8 +16,8 @@ export function NavigationProvider({ children }) {
       value={{
         navigationItemId,
         setNavigationItemId,
-        stepNumber,
-        setStepNumber,
+        stepId,
+        setStepId,
         hasCoAplicant,
         setHasCoAplicant,
       }}

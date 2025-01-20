@@ -5,7 +5,7 @@ import { useNavigation } from "state/NavigationContext";
 
 export default function Step1() {
   // Global state
-  const { stepNumber, setStepNumber, setNavigationItemId } = useNavigation();
+  const { stepNumber, setStepId, setNavigationItemId } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -19,7 +19,7 @@ export default function Step1() {
 
   function nextStep() {
     setNavigationItemId("about-the-home");
-    setStepNumber(2);
+    setStepId("step-about-the-home");
   }
 
   return (

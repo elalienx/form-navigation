@@ -11,7 +11,7 @@ interface Props {
   isActive?: boolean;
 
   /** The actions we want to perform on click */
-  onClick: (navigationItemId: string, stepNumber: number) => void;
+  onClick: (navigationItemId: string, stepId: string) => void;
 }
 
 export default function ItemNavigation({ item, isActive = false, onClick }: Props) {

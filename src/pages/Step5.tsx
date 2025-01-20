@@ -11,7 +11,7 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step5() {
   // Global state
-  const { stepNumber, setStepNumber, hasCoAplicant, setNavigationItemId } = useNavigation();
+  const { stepNumber, setStepId, hasCoAplicant, setNavigationItemId } = useNavigation();
 
   // Methods
   useEffect(() => {
@@ -31,10 +31,10 @@ export default function Step5() {
 
   function nextStep() {
     const navigationItemId = hasCoAplicant ? "co-applicant-work-situation" : "about-the-household";
-    const stepNumber: number = hasCoAplicant ? 6 : 7;
+    const stepId = hasCoAplicant ? "step-co-applicant-work-situation" : "step-about-the-household";
 
     setNavigationItemId(navigationItemId);
-    setStepNumber(stepNumber);
+    setStepId(stepId);
   }
 
   return (

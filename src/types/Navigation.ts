@@ -9,5 +9,5 @@ export default interface Navigation {
   navigationLevel: string;
 
   /** Determines to what formulary step to open on click. */
-  stepToGo: number;
+  stepToGo: string;
 }

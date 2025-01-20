@@ -5,7 +5,7 @@ import { useNavigation } from "state/NavigationContext";
 
 export default function Step2() {
   // Global state
-  const { stepNumber, setStepNumber, setNavigationItemId } = useNavigation();
+  const { stepNumber, setStepId, setNavigationItemId } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -19,7 +19,7 @@ export default function Step2() {
 
   function nextStep() {
     setNavigationItemId("personal-data");
-    setStepNumber(3);
+    setStepId("step-applicant-personal-data");
   }
 
   return (
