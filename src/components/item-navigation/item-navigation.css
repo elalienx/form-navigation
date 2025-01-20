@@ -8,7 +8,7 @@
 }
 /* -- 1.2 Secondary */
 .item-navigation.secondary {
-  padding-left: var(--space-medium);
+  padding-left: var(--space-big);
   font-size: small;
 }
 

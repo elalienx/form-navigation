@@ -15,12 +15,12 @@
     "stepToGo": 3
   },
   {
-    "title": "-- Your personal data",
+    "title": "-- Your data",
     "navigationLevel": "secondary",
     "stepToGo": 3
   },
   {
-    "title": "-- Co-applicant's personal data",
+    "title": "-- Co-applicant's data",
     "navigationLevel": "secondary",
     "stepToGo": 4
   },
@@ -30,12 +30,12 @@
     "stepToGo": 5
   },
   {
-    "title": "-- Your work situation",
+    "title": "-- Your situation",
     "navigationLevel": "secondary",
     "stepToGo": 5
   },
   {
-    "title": "-- Co-applicant's work situation",
+    "title": "-- Co-applicant's situation",
     "navigationLevel": "secondary",
     "stepToGo": 6
   },

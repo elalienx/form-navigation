@@ -33,7 +33,7 @@ export default function Debug() {
           </tr>
         </tbody>
       </table>
-      <small>ℹ️ This table is only for developers.</small>
+      <small>This table is only for developers.</small>
     </section>
   );
 }
