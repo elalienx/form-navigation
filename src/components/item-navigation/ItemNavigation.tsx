@@ -1,18 +1,15 @@
 // Project files
 import { useNavigation } from "state/NavigationContext";
+import Navigation from "types/Navigation";
 import "./item-navigation.css";
 
 interface Props {
-  item: {
-    name: string;
-    navigationLevel: string;
-    step: number;
-  };
+  item: Navigation;
   index: number;
 }
 
 export default function ItemNavigation({ item, index }: Props) {
-  const { name, navigationLevel, step } = item;
+  const { title, navigationLevel, stepToGo } = item;
 
   // Global state
   const { setStep, navigationIndex, setNavigationIndex } = useNavigation();
@@ -23,9 +20,9 @@ export default function ItemNavigation({ item, index }: Props) {
 
   // Methods
   function onClick() {
-    console.log(`Clicked on ${name} to go to ${step}`);
+    console.log(`Clicked on ${title} to go to ${stepToGo}`);
     setNavigationIndex(index);
-    setStep(step);
+    setStep(stepToGo);
   }
 
   return (
@@ -33,7 +30,7 @@ export default function ItemNavigation({ item, index }: Props) {
       className={`item-navigation ${navigationLevel} ${activeCSS}`}
       onClick={onClick}
     >
-      {name}
+      {title}
     </li>
   );
 }
