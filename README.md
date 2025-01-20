@@ -17,6 +17,12 @@ Navigation bullet states to tackle what steps have been completed:
 - completed: for formulary steps that have been validated.
 - uncompleted: for formulary steps that have not been validated.
 
+# Polish
+
+- Add Lendo's blue button.
+- Add icons.
+- Add badge for bullet states.
+
 # Gotchas
 
 - Allow `NavigationProvider` to start with any data configuration to show `<Navigator/>` with or withouth secondary items.

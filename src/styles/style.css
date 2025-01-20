@@ -1,9 +1,22 @@
 body {
-  font-family: "Circular Pro", Helvetica, Arial, sans-serif;
+  background-color: #f7f9ff;
   color: #1f1f1f;
+  font-family: "Circular Pro", Helvetica, Arial, sans-serif;
 }
 
 .app {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.live-demo {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 12px 0px;
+
+  .navigation {
+    max-width: 300px;
+  }
 }

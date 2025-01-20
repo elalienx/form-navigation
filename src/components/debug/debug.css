@@ -1,11 +1,12 @@
 #debug {
-  position: absolute;
+  position: fixed;
   bottom: 16px;
   right: 16px;
 
   table {
     text-align: left;
     border-collapse: collapse;
+    background-color: white;
   }
   th,
   td {
