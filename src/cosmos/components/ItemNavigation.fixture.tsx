@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 // Project files
 import Navigation from "types/Navigation";
-import ItemNavigation from "./ItemNavigation";
+import ItemNavigation from "../../components/item-navigation/ItemNavigation";
 import { NavigationProvider } from "state/NavigationContext";
 
 // Properties
