@@ -10,7 +10,7 @@ import { NavigationProvider } from "state/NavigationContext";
 const defaultItem: Navigation = {
   title: "About the property",
   navigationLevel: "primary",
-  stepNumber: 1,
+  stepToGo: 1,
 };
 const activeIndex = 1;
 const inactiveIndex = 0;
