@@ -7,7 +7,12 @@ import "./styles/style.css";
 export default function App() {
   return (
     <div className="app">
-      <h1>🧭 Form navigator</h1>
+      <h1>Formulator</h1>
+      <p>
+        This is a UX experimentation for testing formulary navigations. Do not
+        submit sensitive data in it.
+      </p>
+
       <div className="live-demo">
         <Navigation />
         <StepManager />
