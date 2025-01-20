@@ -12,8 +12,7 @@ export default function App() {
         This is a UX experimentation for testing formulary navigations. Do not
         submit sensitive data in it.
       </p>
-
-      <div className="live-demo">
+      <div className="formulary">
         <Navigation />
         <StepManager />
       </div>

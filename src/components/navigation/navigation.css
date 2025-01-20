@@ -1,13 +1,12 @@
 .navigation {
-  background-color: #f7f9ff;
-  padding: 8px;
+  background-color: var(--color-page-background);
+  padding: var(--space-small);
 
   ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
     padding: 0;
     list-style-type: none;
-  }
-
-  li {
-    margin-bottom: 4px;
   }
 }

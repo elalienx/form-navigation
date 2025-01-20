@@ -1,30 +1,31 @@
+/* 1. HIERARCHY  */
+/* -- 1.1 Primary */
 .item-navigation {
   background-color: transparent;
-  border-radius: 8px;
-  padding: 4px 8px;
+  border-radius: var(--space-small);
+  padding: var(--space-small);
   cursor: pointer;
 }
-
-/* STATES */
-/* -- Hover */
-.item-navigation:hover {
-  background-color: #e3f6ea;
+/* -- 1.2 Secondary */
+.item-navigation.secondary {
+  padding-left: var(--space-medium);
+  font-size: small;
 }
 
-/* -- Active */
+/* 2. SELECTION STATE */
+/* -- 2.1 Hover */
+.item-navigation:hover {
+  background-color: var(--color-green-light);
+}
+
+/* -- 2.2 Active */
 .item-navigation.active {
-  background-color: #2ac768;
+  background-color: var(--color-green);
   color: white;
 }
 
-/* -- Completed */
+/* 3. COMPLETNESS  */
+/* -- 3.1 Completed */
 .item-navigation.complete {
   background-color: transparent;
-}
-
-/* NAVIGATION LEVEL */
-/* -- Secondary */
-.item-navigation.secondary {
-  padding-left: 24px;
-  font-size: small;
 }

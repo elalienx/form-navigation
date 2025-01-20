@@ -56,7 +56,6 @@ export default function Step3() {
         <button onClick={() => setHasCoAplicant(true)}>Yes</button>
         <button onClick={() => setHasCoAplicant(false)}>No</button>
       </div>
-      <hr />
       <button onClick={onSubmit}>Next ➡️</button>
     </div>
   );
