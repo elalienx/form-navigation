@@ -4,6 +4,8 @@
   right: var(--space-medium);
 
   table {
+    width: 100%;
+    min-width: 400px;
     text-align: left;
     border-collapse: collapse;
     background-color: white;
@@ -15,6 +17,9 @@
   }
   th {
     background-color: lightgray;
+  }
+  td {
+    width: 50%;
   }
 
   small {

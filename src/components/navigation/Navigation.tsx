@@ -9,16 +9,16 @@ import "./navigation.css";
  */
 export default function Navigation() {
   // Global state
-  const { hasCoAplicant } = useNavigation();
+  const { hasCoAplicant } = useNavigation(); // this must come from from data global state
 
   // Components
-  const Items = data.map((item, index) => {
+  const Items = data.map((item) => {
     const isPrimary = item.navigationLevel === "primary";
 
     // Safeguard
     if (!hasCoAplicant && !isPrimary) return;
 
-    return <ItemNavigation key={index} item={item} index={index} />;
+    return <ItemNavigation key={item.id} item={item} />;
   });
 
   return (

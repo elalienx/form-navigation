@@ -1,11 +1,14 @@
 // Project files
-import Image from "assets/2.png";
+import Image from "assets/6.png";
 import Button from "components/button/Button";
 import { useNavigation } from "state/NavigationContext";
 
-export default function Step2() {
+/**
+ * This step is skipped if the applicant does not have a co-applicant.
+ */
+export default function Step6() {
   // Global state
-  const { stepNumber, setStepNumber, setNavigationIndex } = useNavigation();
+  const { stepNumber, setStepNumber, setNavigationItemId } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -18,13 +21,13 @@ export default function Step2() {
   }
 
   function nextStep() {
-    setNavigationIndex(2);
-    setStepNumber(3);
+    setNavigationItemId("about-the-household");
+    setStepNumber(7);
   }
 
   return (
     <div className="step">
-      <h3>About the home</h3>
+      <h3>Co-applicant's work situation</h3>
       <img
         className="mock-screenshot"
         src={Image}

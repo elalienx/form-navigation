@@ -3,16 +3,16 @@ import { ReactElement } from "react";
 
 // Project files
 import { useNavigation } from "state/NavigationContext";
-import Step1 from "steps/Step1";
-import Step2 from "steps/Step2";
-import Step3 from "steps/Step3";
-import Step4 from "steps/Step4";
-import Step5 from "steps/Step5";
-import Step6 from "steps/Step6";
-import Step7 from "steps/Step7";
-import Step8 from "steps/Step8";
-import Step9 from "steps/Step9";
-import Step10 from "steps/Step10";
+import Step1 from "pages/Step1";
+import Step2 from "pages/Step2";
+import Step3 from "pages/Step3";
+import Step4 from "pages/Step4";
+import Step5 from "pages/Step5";
+import Step6 from "pages/Step6";
+import Step7 from "pages/Step7";
+import Step8 from "pages/Step8";
+import Step9 from "pages/Step9";
+import Step10 from "pages/Step10";
 import "./step-manager.css";
 
 /**

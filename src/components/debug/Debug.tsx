@@ -4,7 +4,7 @@ import "./debug.css";
 
 export default function Debug() {
   // Global state
-  const { navigationIndex, stepNumber, hasCoAplicant } = useNavigation();
+  const { navigationItemId, stepNumber, hasCoAplicant } = useNavigation();
 
   // Properties
   const coApplicant = hasCoAplicant ? "✅" : "❌";
@@ -20,8 +20,8 @@ export default function Debug() {
         </thead>
         <tbody>
           <tr>
-            <td>Navigation index</td>
-            <td>{navigationIndex}</td>
+            <td>Navigation item</td>
+            <td>{navigationItemId}</td>
           </tr>
           <tr>
             <td>Step number</td>

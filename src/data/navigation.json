@@ -6,56 +6,67 @@
     "stepToGo": 1
   },
   {
+    "id": "about-the-home",
     "title": "2. About the home",
     "navigationLevel": "primary",
     "stepToGo": 2
   },
   {
+    "id": "personal-data",
     "title": "3. Personal data",
     "navigationLevel": "primary",
     "stepToGo": 3
   },
   {
+    "id": "applicant-personal-data",
     "title": "-- Your data",
     "navigationLevel": "secondary",
     "stepToGo": 3
   },
   {
+    "id": "co-applicant-personal-data",
     "title": "-- Co-applicant's data",
     "navigationLevel": "secondary",
     "stepToGo": 4
   },
   {
+    "id": "work-situation",
     "title": "4. Work situation",
     "navigationLevel": "primary",
     "stepToGo": 5
   },
   {
+    "id": "applicant-work-situation",
     "title": "-- Your situation",
     "navigationLevel": "secondary",
     "stepToGo": 5
   },
   {
+    "id": "co-applicant-work-situation",
     "title": "-- Co-applicant's situation",
     "navigationLevel": "secondary",
     "stepToGo": 6
   },
   {
+    "id": "about-the-household",
     "title": "5. About the household",
     "navigationLevel": "primary",
     "stepToGo": 7
   },
   {
+    "id": "cars-and-homes",
     "title": "6. Cars and homes",
     "navigationLevel": "primary",
     "stepToGo": 8
   },
   {
+    "id": "other-loan-and-credits",
     "title": "7. Other loan and credits",
     "navigationLevel": "primary",
     "stepToGo": 9
   },
   {
+    "id": "summary",
     "title": "8. Summary",
     "navigationLevel": "primary",
     "stepToGo": 10

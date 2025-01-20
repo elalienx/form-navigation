@@ -1,11 +1,11 @@
 // Project files
-import Image from "assets/1.png";
+import Image from "assets/7.png";
 import Button from "components/button/Button";
 import { useNavigation } from "state/NavigationContext";
 
-export default function Step1() {
+export default function Step7() {
   // Global state
-  const { stepNumber, setStepNumber, setNavigationIndex } = useNavigation();
+  const { stepNumber, setStepNumber, setNavigationItemId } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -18,13 +18,13 @@ export default function Step1() {
   }
 
   function nextStep() {
-    setNavigationIndex(1);
-    setStepNumber(2);
+    setNavigationItemId("cars-and-homes");
+    setStepNumber(8);
   }
 
   return (
     <div className="step">
-      <h3>About the loan</h3>
+      <h3>About the household</h3>
       <img
         className="mock-screenshot"
         src={Image}

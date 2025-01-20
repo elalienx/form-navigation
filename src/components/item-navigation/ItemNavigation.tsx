@@ -5,23 +5,24 @@ import "./item-navigation.css";
 
 interface Props {
   item: Navigation;
-  index: number;
 }
 
-export default function ItemNavigation({ item, index }: Props) {
-  const { title, navigationLevel, stepToGo } = item;
+export default function ItemNavigation({ item }: Props) {
+  const { id, title, navigationLevel, stepToGo } = item;
 
   // Global state
-  const { setStepNumber, navigationIndex, setNavigationIndex } =
+  const { setStepNumber, navigationItemId, setNavigationItemId } =
     useNavigation();
 
   // Properties
-  const isActive = navigationIndex === index;
+  /** 🔔 Refactor: Pass navigationItemId as prop  */
+  const isActive = navigationItemId === id;
   const activeCSS = isActive ? "active" : "";
 
   // Methods
+  /** 🔔 Refactor: Extract this to Navigation.tsx */
   function onClick() {
-    setNavigationIndex(index);
+    setNavigationItemId(id);
     setStepNumber(stepToGo);
   }
 

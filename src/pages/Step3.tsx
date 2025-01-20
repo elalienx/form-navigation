@@ -11,19 +11,14 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step3() {
   // Global state
-  const {
-    stepNumber,
-    setStepNumber,
-    hasCoAplicant,
-    setHasCoAplicant,
-    setNavigationIndex,
-  } = useNavigation();
+  const { stepNumber, setStepNumber, hasCoAplicant, setHasCoAplicant, setNavigationItemId } =
+    useNavigation();
 
   // Methods
   useEffect(() => {
-    const overrideNavigation = hasCoAplicant ? 3 : 2;
+    const overrideNavigationItemId = hasCoAplicant ? "applicant-personal-data" : "personal-data";
 
-    setNavigationIndex(overrideNavigation);
+    setNavigationItemId(overrideNavigationItemId);
   }, [hasCoAplicant]);
 
   function onSubmit() {
@@ -36,10 +31,10 @@ export default function Step3() {
   }
 
   function nextStep() {
-    const navigationIndex: number = hasCoAplicant ? 4 : 5;
+    const navigationItemId = hasCoAplicant ? "co-applicant-personal-data" : "work-situation";
     const stepNumber: number = hasCoAplicant ? 4 : 5;
 
-    setNavigationIndex(navigationIndex);
+    setNavigationItemId(navigationItemId);
     setStepNumber(stepNumber);
   }
 

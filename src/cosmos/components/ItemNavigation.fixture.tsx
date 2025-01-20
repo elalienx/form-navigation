@@ -8,6 +8,7 @@ import { NavigationProvider } from "state/NavigationContext";
 
 // Properties
 const defaultItem: Navigation = {
+  id: "about-the-property",
   title: "About the property",
   navigationLevel: "primary",
   stepToGo: 1,
@@ -27,12 +28,12 @@ function Decorator({ children }: Props) {
 export default {
   Default: (
     <Decorator>
-      <ItemNavigation item={defaultItem} index={activeIndex} />
+      <ItemNavigation item={defaultItem} />
     </Decorator>
   ),
   Active: (
     <Decorator>
-      <ItemNavigation item={defaultItem} index={inactiveIndex} />
+      <ItemNavigation item={defaultItem} />
     </Decorator>
   ),
 };

@@ -7,15 +7,15 @@ const Context = createContext(null);
 // For the parent
 export function NavigationProvider({ children }) {
   // Local state
-  const [navigationIndex, setNavigationIndex] = useState(0); // first item start on index 0
+  const [navigationItemId, setNavigationItemId] = useState("about-the-loan");
   const [stepNumber, setStepNumber] = useState(1);
-  const [hasCoAplicant, setHasCoAplicant] = useState(false); // to toggle the secondary steps
+  const [hasCoAplicant, setHasCoAplicant] = useState(false); // to toggle the secondary steps, this should not be here but on the form data global state
 
   return (
     <Context.Provider
       value={{
-        navigationIndex,
-        setNavigationIndex,
+        navigationItemId,
+        setNavigationItemId,
         stepNumber,
         setStepNumber,
         hasCoAplicant,
