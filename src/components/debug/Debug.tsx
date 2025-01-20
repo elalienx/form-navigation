@@ -7,15 +7,15 @@ export default function Debug() {
   const { navigationItemId, stepId, hasCoAplicant } = useNavigation();
 
   // Properties
-  const coApplicant = hasCoAplicant ? "✅" : "❌";
+  const coApplicant = hasCoAplicant ? "Yes ✅" : "No ❌";
 
   return (
     <section id="debug">
       <table>
         <thead>
           <tr>
-            <th>Data</th>
-            <th>Value</th>
+            <th width="150px">Data</th>
+            <th width="275px">Value</th>
           </tr>
         </thead>
         <tbody>

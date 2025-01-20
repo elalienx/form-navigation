@@ -19,7 +19,7 @@ export default function Step9() {
 
   function nextStep() {
     setNavigationItemId("summary");
-    setStepId("step-summary");
+    setStepId("step-10-summary");
   }
 
   return (

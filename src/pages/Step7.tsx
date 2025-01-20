@@ -19,7 +19,7 @@ export default function Step7() {
 
   function nextStep() {
     setNavigationItemId("cars-and-homes");
-    setStepId("step-cars-and-homes");
+    setStepId("step-8-cars-and-homes");
   }
 
   return (

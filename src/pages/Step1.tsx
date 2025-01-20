@@ -19,7 +19,7 @@ export default function Step1() {
 
   function nextStep() {
     setNavigationItemId("about-the-home");
-    setStepId("step-about-the-home");
+    setStepId("step-2-about-the-home");
   }
 
   return (

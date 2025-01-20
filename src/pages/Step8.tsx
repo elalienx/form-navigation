@@ -19,7 +19,7 @@ export default function Step8() {
 
   function nextStep() {
     setNavigationItemId("other-loan-and-credits");
-    setStepId("step-other-loan-and-credits");
+    setStepId("step-9-other-loan-and-credits");
   }
 
   return (

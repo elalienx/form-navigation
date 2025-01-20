@@ -33,8 +33,8 @@ export default function Step3() {
   function nextStep() {
     const navigationItemId = hasCoAplicant ? "co-applicant-personal-data" : "work-situation";
     const stepId = hasCoAplicant
-      ? "step-co-applicant-personal-data"
-      : "step-applicant-work-situation";
+      ? "step-4-co-applicant-personal-data"
+      : "step-5-applicant-work-situation";
 
     setNavigationItemId(navigationItemId);
     setStepId(stepId);

@@ -22,7 +22,7 @@ export default function Step6() {
 
   function nextStep() {
     setNavigationItemId("about-the-household");
-    setStepId("step-about-the-household");
+    setStepId("step-7-about-the-household");
   }
 
   return (

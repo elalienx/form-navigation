@@ -24,16 +24,16 @@ export default function StepManager() {
 
   // Properties
   const steps = {
-    "step-about-the-loan": <Step1 />,
-    "step-about-the-home": <Step2 />,
-    "step-applicant-personal-data": <Step3 />,
-    "step-co-applicant-personal-data": <Step4 />,
-    "step-applicant-work-situation": <Step5 />,
-    "step-co-applicant-work-situation": <Step6 />,
-    "step-about-the-household": <Step7 />,
-    "step-cars-and-homes": <Step8 />,
-    "step-other-loan-and-credits": <Step9 />,
-    "step-summary": <Step10 />,
+    "step-1-about-the-loan": <Step1 />,
+    "step-2-about-the-home": <Step2 />,
+    "step-3-applicant-personal-data": <Step3 />,
+    "step-4-co-applicant-personal-data": <Step4 />,
+    "step-5-applicant-work-situation": <Step5 />,
+    "step-6-co-applicant-work-situation": <Step6 />,
+    "step-7-about-the-household": <Step7 />,
+    "step-8-cars-and-homes": <Step8 />,
+    "step-9-other-loan-and-credits": <Step9 />,
+    "step-10-summary": <Step10 />,
   };
 
   // Components

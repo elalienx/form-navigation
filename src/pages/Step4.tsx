@@ -22,7 +22,7 @@ export default function Step4() {
 
   function nextStep() {
     setNavigationItemId("work-situation");
-    setStepId("step-applicant-work-situation");
+    setStepId("step-5-applicant-work-situation");
   }
 
   return (

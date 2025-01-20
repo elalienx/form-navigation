@@ -19,7 +19,7 @@ export default function Step2() {
 
   function nextStep() {
     setNavigationItemId("personal-data");
-    setStepId("step-applicant-personal-data");
+    setStepId("step-3-applicant-personal-data");
   }
 
   return (
