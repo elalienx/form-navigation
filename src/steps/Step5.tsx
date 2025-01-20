@@ -26,10 +26,11 @@ export default function Step5() {
   }
 
   function nextStep() {
-    const nextStep: number = hasCoAplicant ? 6 : 7;
+    const navigationIndex: number = hasCoAplicant ? 5 : 8;
+    const stepToGo: number = hasCoAplicant ? 6 : 7;
 
-    setNavigationIndex(2);
-    setStepToGo(nextStep);
+    setNavigationIndex(navigationIndex);
+    setStepToGo(stepToGo);
   }
 
   return (

@@ -17,7 +17,7 @@ export default function Step7() {
   }
 
   function nextStep() {
-    setNavigationIndex(7);
+    setNavigationIndex(9);
     setStepToGo(8);
   }
 
