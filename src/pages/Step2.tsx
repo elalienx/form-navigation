@@ -9,15 +9,7 @@ export default function Step2() {
 
   // Methods
   function onSubmit() {
-    validateForm();
-    nextStep();
-  }
-
-  function validateForm() {
     console.log(`Validating form step #${stepNumber}`);
-  }
-
-  function nextStep() {
     setNavigationItemId("personal-data");
     setStepId("step-3-applicant-personal-data");
   }

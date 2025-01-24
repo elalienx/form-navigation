@@ -21,12 +21,8 @@ export default function Step5() {
   }, [hasCoAplicant]);
 
   function onSubmit() {
-    validateForm();
-    nextStep();
-  }
-
-  function validateForm() {
     console.log(`Validating form step #${stepNumber}`);
+    nextStep();
   }
 
   function nextStep() {

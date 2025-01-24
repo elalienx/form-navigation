@@ -9,15 +9,7 @@ export default function Step8() {
 
   // Methods
   function onSubmit() {
-    validateForm();
-    nextStep();
-  }
-
-  function validateForm() {
     console.log(`Validating form step #${stepNumber}`);
-  }
-
-  function nextStep() {
     setNavigationItemId("other-loan-and-credits");
     setStepId("step-9-other-loan-and-credits");
   }

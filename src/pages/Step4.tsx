@@ -12,15 +12,7 @@ export default function Step4() {
 
   // Methods
   function onSubmit() {
-    validateForm();
-    nextStep();
-  }
-
-  function validateForm() {
     console.log(`Validating form step #${stepNumber}`);
-  }
-
-  function nextStep() {
     setNavigationItemId("work-situation");
     setStepId("step-5-applicant-work-situation");
   }

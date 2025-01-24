@@ -9,15 +9,7 @@ export default function Step9() {
 
   // Methods
   function onSubmit() {
-    validateForm();
-    nextStep();
-  }
-
-  function validateForm() {
     console.log(`Validating form step #${stepNumber}`);
-  }
-
-  function nextStep() {
     setNavigationItemId("summary");
     setStepId("step-10-summary");
   }
