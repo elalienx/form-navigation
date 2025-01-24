@@ -7,14 +7,23 @@
     text-align: left;
     border-collapse: collapse;
     background-color: white;
-  }
-  th,
-  td {
-    border: 1px solid var(--color-gray);
-    padding: var(--space-small) var(--space-medium);
-  }
-  th {
-    background-color: lightgray;
+
+    th,
+    td {
+      border: 1px solid var(--color-gray);
+      padding: var(--space-small) var(--space-medium);
+    }
+    th {
+      background-color: lightgray;
+    }
+
+    /* Table width */
+    th:first-child {
+      width: 125px;
+    }
+    th:last-child {
+      width: 275px;
+    }
   }
 
   small {

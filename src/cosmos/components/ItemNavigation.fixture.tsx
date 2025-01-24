@@ -7,12 +7,12 @@ const defaultItem: Navigation = {
   id: "about-the-property",
   title: "About the property",
   navigationLevel: "primary",
-  stepToGo: 1,
+  stepToGo: "step-2-about-the-home",
 };
 
 // Methods
-function onClick(navigationItemId: string, stepNumber: number) {
-  alert(`ItemId ${navigationItemId}, Step to go ${stepNumber}`);
+function onClick(navigationItemId: string, stepToGo: string) {
+  alert(`ItemId ${navigationItemId}, Step to go ${stepToGo}`);
 }
 
 export default {

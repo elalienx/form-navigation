@@ -14,8 +14,8 @@ export default function Debug() {
       <table>
         <thead>
           <tr>
-            <th width="150px">Data</th>
-            <th width="275px">Value</th>
+            <th>Data</th>
+            <th>Value</th>
           </tr>
         </thead>
         <tbody>
