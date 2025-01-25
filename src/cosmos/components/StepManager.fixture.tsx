@@ -1,23 +1,18 @@
-// Node modules
-import { ReactNode } from "react";
-
 // Project files
 import StepManager from "components/step-manager/StepManager";
 import { NavigationProvider } from "state/NavigationContext";
+import NavigationInitialState from "types/NavigationInitialState";
 
-// Decorators
-interface Props {
-  children: ReactNode;
-}
-
-function Decorator({ children }: Props) {
-  return <NavigationProvider>{children}</NavigationProvider>;
-}
+// Properties
+const initialState: NavigationInitialState = {
+  stepId: "step-1-about-the-loan",
+  hasCoApplicant: false,
+};
 
 export default {
   Step1: (
-    <Decorator>
+    <NavigationProvider initialState={initialState}>
       <StepManager />
-    </Decorator>
+    </NavigationProvider>
   ),
 };

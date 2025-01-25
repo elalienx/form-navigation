@@ -1,5 +1,5 @@
 // Project files
-import ItemNavigation from "components/item-navigation-primary/ItemNavigationPrimary";
+import ItemNavigationPrimary from "components/item-navigation-primary/ItemNavigationPrimary";
 import data from "data/navigation.json";
 import { useNavigation } from "state/NavigationContext";
 import "./navigation.css";
@@ -24,7 +24,9 @@ export default function Navigation() {
     // Safeguard
     if (!hasCoApplicant && !isPrimary) return;
 
-    return <ItemNavigation key={item.id} item={item} onClick={onItemClick} isActive={isActive} />;
+    return (
+      <ItemNavigationPrimary key={item.id} item={item} onClick={onItemClick} isActive={isActive} />
+    );
   });
 
   return (
