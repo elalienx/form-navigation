@@ -1,11 +1,11 @@
 // Project files
-import Navigation from "types/Navigation";
+import iNavigation from "types/Navigation";
 import "./item-navigation-menu.css";
 import FontAwesomeIcon from "components/font-awesome/FontAwesomeIcon";
 
 interface Props {
   /** The object with the information to display the item. */
-  item: Navigation;
+  item: iNavigation;
 }
 
 export default function ItemNavigationMenu({ item }: Props) {

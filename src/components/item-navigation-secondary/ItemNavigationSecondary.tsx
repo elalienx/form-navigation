@@ -1,10 +1,10 @@
 // Project files
-import Navigation from "types/Navigation";
+import iNavigation from "types/Navigation";
 import "./item-navigation-secondary.css";
 
 interface Props {
   /** The object with the information to display the item. */
-  item: Navigation;
+  item: iNavigation;
 
   /** Flag to highlight the item if active */
   isActive?: boolean;

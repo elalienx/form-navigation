@@ -1,0 +1,62 @@
+[
+  {
+    "title": "1. About the loan",
+    "navigationLevel": "primary",
+    "id": "step-1-about-the-loan"
+  },
+  {
+    "title": "2. About the home",
+    "navigationLevel": "primary",
+    "id": "step-2-about-the-home"
+  },
+  {
+    "title": "3. Personal data",
+    "navigationLevel": "menu",
+    "id": "step-3-applicant-personal-data"
+  },
+  {
+    "title": "-- Your data",
+    "navigationLevel": "secondary",
+    "id": "step-3-applicant-personal-data"
+  },
+  {
+    "title": "-- Co-applicant's data",
+    "navigationLevel": "secondary",
+    "id": "step-4-co-applicant-personal-data"
+  },
+  {
+    "title": "4. Work situation",
+    "navigationLevel": "menu",
+    "id": "step-5-applicant-work-situation"
+  },
+  {
+    "title": "-- Your situation",
+    "navigationLevel": "secondary",
+    "id": "step-5-applicant-work-situation"
+  },
+  {
+    "title": "-- Co-applicant's situation",
+    "navigationLevel": "secondary",
+    "id": "step-6-co-applicant-work-situation"
+  },
+  {
+    "title": "5. About the household",
+    "navigationLevel": "primary",
+    "id": "step-7-about-the-household"
+  },
+  {
+    "title": "6. Cars and homes",
+    "navigationLevel": "primary",
+    "id": "step-8-cars-and-homes"
+  },
+  {
+    "title": "7. Other loan and credits",
+    "navigationLevel": "primary",
+    "id": "step-9-other-loan-and-credits"
+  },
+  {
+    "title": "8. Summary",
+    "navigationLevel": "primary",
+    "id": "step-10-summary"
+  }
+]

@@ -15,29 +15,9 @@
     "id": "step-3-applicant-personal-data"
   },
   {
-    "title": "-- Your data",
-    "navigationLevel": "primary",
-    "id": "step-3-applicant-personal-data"
-  },
-  {
-    "title": "-- Co-applicant's data",
-    "navigationLevel": "secondary",
-    "id": "step-4-co-applicant-personal-data"
-  },
-  {
     "title": "4. Work situation",
     "navigationLevel": "primary",
     "id": "step-5-applicant-work-situation"
-  },
-  {
-    "title": "-- Your situation",
-    "navigationLevel": "secondary",
-    "id": "step-5-applicant-work-situation"
-  },
-  {
-    "title": "-- Co-applicant's situation",
-    "navigationLevel": "secondary",
-    "id": "step-6-co-applicant-work-situation"
   },
   {
     "title": "5. About the household",

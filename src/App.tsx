@@ -5,7 +5,7 @@ import StepManager from "components/step-manager/StepManager";
 import "./styles/style.css";
 
 export default function App() {
-  return (
+  return ( 
     <div className="app">
       <h1>Form navigator</h1>
       <p>
@@ -13,7 +13,7 @@ export default function App() {
         submit sensitive data in it.
       </p>
       <div className="formulary">
-        <Navigation />
+        <Navigation items={[]} />
         <StepManager />
       </div>
       <Debug />

@@ -1,9 +1,9 @@
 // Project files
-import Navigation from "types/Navigation";
+import iNavigation from "types/Navigation";
 import ItemNavigationPrimary from "components/item-navigation-primary/ItemNavigationPrimary";
 
 // Properties
-const item: Navigation = {
+const item: iNavigation = {
   id: "step-1-about-the-loan",
   title: "1. About the loan",
   navigationLevel: "primary",

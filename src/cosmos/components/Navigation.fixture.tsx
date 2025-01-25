@@ -1,4 +1,6 @@
 // Project files
+import dataWithCoApplicant from "data/with-co-applicant.json";
+import dataWithoutCoApplicant from "data/withouth-co-applicant.json";
 import Navigation from "components/navigation/Navigation";
 import { NavigationProvider } from "state/NavigationContext";
 import NavigationInitialState from "types/NavigationInitialState";
@@ -16,12 +18,12 @@ const withApplicantState: NavigationInitialState = {
 export default {
   Default: (
     <NavigationProvider initialState={withouthApplicantState}>
-      <Navigation />
+      <Navigation items={dataWithoutCoApplicant} />
     </NavigationProvider>
   ),
   WithSecondaryItems: (
     <NavigationProvider initialState={withApplicantState}>
-      <Navigation />
+      <Navigation items={dataWithCoApplicant} />
     </NavigationProvider>
   ),
 };

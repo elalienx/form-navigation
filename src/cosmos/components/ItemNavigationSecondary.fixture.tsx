@@ -1,9 +1,9 @@
 // Project files
-import Navigation from "types/Navigation";
+import iNavigation from "types/Navigation";
 import ItemNavigationSecondary from "components/item-navigation-secondary/ItemNavigationSecondary";
 
 // Properties
-const item: Navigation = {
+const item: iNavigation = {
   id: "step-4-co-applicant-personal-data",
   title: "Co-applicant's data",
   navigationLevel: "secondary",
