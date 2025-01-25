@@ -8,7 +8,7 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step5() {
   // Global state
-  const { stepNumber, setStepId, hasCoAplicant } = useNavigation();
+  const { stepNumber, setStepId, hasCoApplicant } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -17,7 +17,7 @@ export default function Step5() {
   }
 
   function nextStep() {
-    const stepId = hasCoAplicant
+    const stepId = hasCoApplicant
       ? "step-6-co-applicant-work-situation"
       : "step-7-about-the-household";
 

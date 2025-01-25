@@ -8,7 +8,7 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step3() {
   // Global state
-  const { stepId, setStepId, hasCoAplicant, setHasCoAplicant } = useNavigation();
+  const { stepId, setStepId, hasCoApplicant, setHasCoApplicant } = useNavigation();
 
   // Methods
   function onSubmit() {
@@ -17,7 +17,7 @@ export default function Step3() {
   }
 
   function nextStep() {
-    const stepId = hasCoAplicant
+    const stepId = hasCoApplicant
       ? "step-4-co-applicant-personal-data"
       : "step-5-applicant-work-situation";
 
@@ -40,8 +40,8 @@ export default function Step3() {
             type="radio"
             name="coApplicant"
             value="yes"
-            checked={hasCoAplicant === true}
-            onChange={() => setHasCoAplicant(true)}
+            checked={hasCoApplicant === true}
+            onChange={() => setHasCoApplicant(true)}
           />
           Yes
         </label>
@@ -50,8 +50,8 @@ export default function Step3() {
             type="radio"
             name="coApplicant"
             value="no"
-            checked={hasCoAplicant === false}
-            onChange={() => setHasCoAplicant(false)}
+            checked={hasCoApplicant === false}
+            onChange={() => setHasCoApplicant(false)}
           />
           No
         </label>

@@ -1,24 +1,27 @@
-// Node modules
-import { ReactNode } from "react";
-
 // Project files
 import Navigation from "components/navigation/Navigation";
 import { NavigationProvider } from "state/NavigationContext";
+import NavigationInitialState from "types/NavigationInitialState";
 
-// Decorators
-interface Props {
-  children: ReactNode;
-}
-
-function Decorator({ children }: Props) {
-  return <NavigationProvider>{children}</NavigationProvider>;
-}
+// Properties
+const withouthApplicantState: NavigationInitialState = {
+  stepId: "step-1-about-the-loan",
+  hasCoApplicant: false,
+};
+const withApplicantState: NavigationInitialState = {
+  stepId: "step-1-about-the-loan",
+  hasCoApplicant: true,
+};
 
 export default {
   Default: (
-    <Decorator>
+    <NavigationProvider initialState={withouthApplicantState}>
       <Navigation />
-    </Decorator>
+    </NavigationProvider>
   ),
-  WithSecondaryItems: <p>⚠️ Pending</p>,
+  WithSecondaryItems: (
+    <NavigationProvider initialState={withApplicantState}>
+      <Navigation />
+    </NavigationProvider>
+  ),
 };

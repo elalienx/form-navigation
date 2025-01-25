@@ -4,10 +4,10 @@ import "./debug.css";
 
 export default function Debug() {
   // Global state
-  const { stepId, hasCoAplicant } = useNavigation();
+  const { stepId, hasCoApplicant } = useNavigation();
 
   // Properties
-  const coApplicant = hasCoAplicant ? "Yes" : "No";
+  const coApplicant = hasCoApplicant ? "Yes" : "No";
 
   return (
     <section id="debug">

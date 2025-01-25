@@ -9,7 +9,7 @@ import "./navigation.css";
  */
 export default function Navigation() {
   // Global state
-  const { stepId, setStepId, hasCoAplicant } = useNavigation();
+  const { stepId, setStepId, hasCoApplicant } = useNavigation();
 
   // Methods
   function onItemClick(stepId: string) {
@@ -22,7 +22,7 @@ export default function Navigation() {
     const isActive = stepId === item.id;
 
     // Safeguard
-    if (!hasCoAplicant && !isPrimary) return;
+    if (!hasCoApplicant && !isPrimary) return;
 
     return <ItemNavigation key={item.id} item={item} onClick={onItemClick} isActive={isActive} />;
   });

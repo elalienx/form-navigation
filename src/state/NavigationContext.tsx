@@ -1,22 +1,27 @@
 // Node modules
-import { createContext, useContext, useState } from "react";
+import { createContext, ReactElement, useContext, useState } from "react";
+import NavigationInitialState from "types/NavigationInitialState";
 
 // Properties
 const Context = createContext(null);
 
-// For the parent
-export function NavigationProvider({ children }) {
+interface Props {
+  children: ReactElement;
+  initialState: NavigationInitialState;
+}
+
+export function NavigationProvider({ children, initialState }: Props) {
   // Local state
-  const [stepId, setStepId] = useState("step-1-about-the-loan");
-  const [hasCoAplicant, setHasCoAplicant] = useState(false); // to toggle the secondary steps, this should not be here but on the form data global state
+  const [stepId, setStepId] = useState(initialState.stepId);
+  const [hasCoApplicant, setHasCoApplicant] = useState(initialState.hasCoApplicant);
 
   return (
     <Context.Provider
       value={{
         stepId,
         setStepId,
-        hasCoAplicant,
-        setHasCoAplicant,
+        hasCoApplicant,
+        setHasCoApplicant,
       }}
     >
       {children}
@@ -24,7 +29,6 @@ export function NavigationProvider({ children }) {
   );
 }
 
-// For the children
 export function useNavigation() {
   const context = useContext(Context);
   const errorMessage = `This component is using global state from useNavigation(). Ensure that it is wrapped with a NavigationProvider.`;
