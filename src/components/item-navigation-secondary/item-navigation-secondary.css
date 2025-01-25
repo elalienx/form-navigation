@@ -1,7 +1,7 @@
 .item-navigation-secondary {
+  padding: var(--space-small) var(--space-medium);
   background-color: transparent;
   border-radius: var(--space-small);
-  padding: var(--space-small) var(--space-medium);
   font-size: small;
   cursor: pointer;
 

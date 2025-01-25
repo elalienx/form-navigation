@@ -1,7 +1,7 @@
 .item-navigation-primary {
+  padding: var(--space-small) var(--space-medium);
   background-color: transparent;
   border-radius: var(--space-small);
-  padding: var(--space-small) var(--space-medium);
   list-style: none;
   cursor: pointer;
 

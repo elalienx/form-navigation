@@ -1,5 +1,7 @@
 // Project files
-import ItemNavigationPrimary from "components/item-navigation-primary/ItemNavigationPrimary";
+import ItemPrimary from "components/item-navigation-primary/ItemNavigationPrimary";
+import ItemSecondary from "components/item-navigation-secondary/ItemNavigationSecondary";
+import ItemMenu from "components/item-navigation-menu/ItemNavigationMenu";
 import data from "data/navigation.json";
 import { useNavigation } from "state/NavigationContext";
 import "./navigation.css";
@@ -16,22 +18,32 @@ export default function Navigation() {
     setStepId(stepId);
   }
 
-  // Components
-  const Items = data.map((item) => {
-    const isPrimary = item.navigationLevel === "primary";
-    const isActive = stepId === item.id;
-
-    // Safeguard
-    if (!hasCoApplicant && !isPrimary) return;
-
-    return (
-      <ItemNavigationPrimary key={item.id} item={item} onClick={onItemClick} isActive={isActive} />
-    );
-  });
-
   return (
     <nav className="navigation">
-      <ul>{Items}</ul>
+      <ul>
+        {/* One */}
+        <ItemPrimary
+          item={data[0]}
+          onClick={() => onItemClick(data[0].id)}
+          isActive={data[0].id === stepId}
+        />
+        {/* Two */}
+        <ItemPrimary
+          item={data[1]}
+          onClick={() => onItemClick(data[1].id)}
+          isActive={data[1].id === stepId}
+        />
+        {/* Three */}
+        {hasCoApplicant ? (
+          <ItemMenu item={data[2]} />
+        ) : (
+          <ItemPrimary
+            item={data[2]}
+            onClick={() => onItemClick(data[2].id)}
+            isActive={data[2].id === stepId}
+          />
+        )}
+      </ul>
     </nav>
   );
 }

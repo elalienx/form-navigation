@@ -1,6 +1,7 @@
 .item-navigation-menu {
-  background-color: transparent;
-  border-radius: var(--space-small);
   padding: var(--space-small) var(--space-medium);
+  background-color: transparent;
+  color: var(--color-gray);
+  border-radius: var(--space-small);
   list-style: none;
 }
