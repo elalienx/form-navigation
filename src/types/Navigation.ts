@@ -1,5 +1,5 @@
 export default interface Navigation {
-  /** Unique identifier of this navigation item. */
+  /** ID used to determine to what formulary step to open on click. */
   id: string;
 
   /** Title to show on the navigation bar */
@@ -7,7 +7,4 @@ export default interface Navigation {
 
   /** Determines what kind of navigation has */
   navigationLevel: string;
-
-  /** Determines to what formulary step to open on click. */
-  stepToGo: string;
 }

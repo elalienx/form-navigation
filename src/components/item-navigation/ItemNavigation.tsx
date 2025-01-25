@@ -11,20 +11,17 @@ interface Props {
   isActive?: boolean;
 
   /** The actions we want to perform on click */
-  onClick: (navigationItemId: string, stepId: string) => void;
+  onClick: (id: string) => void;
 }
 
-export default function ItemNavigation({ item, isActive = false, onClick }: Props) {
-  const { id, title, navigationLevel, stepToGo } = item;
+export default function ItemNavigation({ item, isActive, onClick }: Props) {
+  const { id, title, navigationLevel } = item;
 
   // Properties
   const activeCSS = isActive ? "active" : "";
 
   return (
-    <li
-      className={`item-navigation ${navigationLevel} ${activeCSS}`}
-      onClick={() => onClick(id, stepToGo)}
-    >
+    <li className={`item-navigation ${navigationLevel} ${activeCSS}`} onClick={() => onClick(id)}>
       {title}
     </li>
   );

@@ -1,6 +1,3 @@
-// Node modules
-import { useEffect } from "react";
-
 // Project files
 import Image from "assets/3.png";
 import Button from "components/button/Button";
@@ -11,28 +8,19 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step3() {
   // Global state
-  const { stepId, setStepId, hasCoAplicant, setHasCoAplicant, setNavigationItemId } =
-    useNavigation();
+  const { stepId, setStepId, hasCoAplicant, setHasCoAplicant } = useNavigation();
 
   // Methods
-  useEffect(() => {
-    const overrideNavigationItemId = hasCoAplicant ? "applicant-personal-data" : "personal-data";
-
-    setNavigationItemId(overrideNavigationItemId);
-  }, [hasCoAplicant]);
-
   function onSubmit() {
     console.log(`Validating form step #${stepId}`);
     nextStep();
   }
 
   function nextStep() {
-    const navigationItemId = hasCoAplicant ? "co-applicant-personal-data" : "work-situation";
     const stepId = hasCoAplicant
       ? "step-4-co-applicant-personal-data"
       : "step-5-applicant-work-situation";
 
-    setNavigationItemId(navigationItemId);
     setStepId(stepId);
   }
 

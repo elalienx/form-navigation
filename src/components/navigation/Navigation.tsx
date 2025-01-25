@@ -9,18 +9,17 @@ import "./navigation.css";
  */
 export default function Navigation() {
   // Global state
-  const { navigationItemId, setNavigationItemId, setStepId, hasCoAplicant } = useNavigation();
+  const { stepId, setStepId, hasCoAplicant } = useNavigation();
 
   // Methods
-  function onItemClick(navigationItemId: string, stepId: string) {
-    setNavigationItemId(navigationItemId);
+  function onItemClick(stepId: string) {
     setStepId(stepId);
   }
 
   // Components
   const Items = data.map((item) => {
     const isPrimary = item.navigationLevel === "primary";
-    const isActive = navigationItemId === item.id;
+    const isActive = stepId === item.id;
 
     // Safeguard
     if (!hasCoAplicant && !isPrimary) return;

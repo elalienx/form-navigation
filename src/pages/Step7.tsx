@@ -5,12 +5,11 @@ import { useNavigation } from "state/NavigationContext";
 
 export default function Step7() {
   // Global state
-  const { stepNumber, setStepId, setNavigationItemId } = useNavigation();
+  const { stepNumber, setStepId } = useNavigation();
 
   // Methods
   function onSubmit() {
     console.log(`Validating form step #${stepNumber}`);
-    setNavigationItemId("cars-and-homes");
     setStepId("step-8-cars-and-homes");
   }
 
