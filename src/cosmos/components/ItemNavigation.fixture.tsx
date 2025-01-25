@@ -1,6 +1,6 @@
 // Project files
 import Navigation from "types/Navigation";
-import ItemNavigation from "../../components/item-navigation/ItemNavigation";
+import ItemNavigation from "../../components/item-navigation-primary/ItemNavigationPrimary";
 
 // Properties
 const defaultItem: Navigation = {

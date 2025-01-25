@@ -1,0 +1,15 @@
+.item-navigation-primary {
+  background-color: transparent;
+  border-radius: var(--space-small);
+  padding: var(--space-small) var(--space-medium);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-green-light);
+  }
+
+  &.active {
+    background-color: var(--color-green);
+    color: white;
+  }
+}

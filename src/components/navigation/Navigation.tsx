@@ -1,5 +1,5 @@
 // Project files
-import ItemNavigation from "components/item-navigation/ItemNavigation";
+import ItemNavigation from "components/item-navigation-primary/ItemNavigationPrimary";
 import data from "data/navigation.json";
 import { useNavigation } from "state/NavigationContext";
 import "./navigation.css";

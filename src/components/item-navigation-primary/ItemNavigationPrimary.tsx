@@ -1,7 +1,6 @@
 // Project files
-import { useNavigation } from "state/NavigationContext";
 import Navigation from "types/Navigation";
-import "./item-navigation.css";
+import "./item-navigation-primary.css";
 
 interface Props {
   /** The object with the information to display the item. */
@@ -14,14 +13,14 @@ interface Props {
   onClick: (id: string) => void;
 }
 
-export default function ItemNavigation({ item, isActive, onClick }: Props) {
-  const { id, title, navigationLevel } = item;
+export default function ItemNavigationPrimary({ item, isActive, onClick }: Props) {
+  const { id, title } = item;
 
   // Properties
   const activeCSS = isActive ? "active" : "";
 
   return (
-    <li className={`item-navigation ${navigationLevel} ${activeCSS}`} onClick={() => onClick(id)}>
+    <li className={`item-navigation-primary ${activeCSS}`} onClick={() => onClick(id)}>
       {title}
     </li>
   );

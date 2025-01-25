@@ -1,0 +1,5 @@
+.item-navigation-menu {
+  background-color: transparent;
+  border-radius: var(--space-small);
+  padding: var(--space-small) var(--space-medium);
+}
