@@ -2,8 +2,8 @@
   background-color: transparent;
   border-radius: var(--space-small);
   padding: var(--space-small) var(--space-medium);
-  cursor: pointer;
   list-style: none;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-green-light);

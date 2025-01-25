@@ -3,7 +3,7 @@ import Navigation from "types/Navigation";
 import ItemNavigationSecondary from "components/item-navigation-secondary/ItemNavigationSecondary";
 
 // Properties
-const defaultItem: Navigation = {
+const item: Navigation = {
   id: "step-4-co-applicant-personal-data",
   title: "Co-applicant's data",
   navigationLevel: "secondary",
@@ -15,6 +15,6 @@ function onClick(id: string) {
 }
 
 export default {
-  Default: <ItemNavigationSecondary item={defaultItem} onClick={onClick} />,
-  Active: <ItemNavigationSecondary item={defaultItem} onClick={onClick} isActive />,
+  Default: <ItemNavigationSecondary item={item} onClick={onClick} />,
+  Active: <ItemNavigationSecondary item={item} onClick={onClick} isActive />,
 };

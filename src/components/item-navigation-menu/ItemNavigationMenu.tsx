@@ -1,6 +1,7 @@
 // Project files
 import Navigation from "types/Navigation";
 import "./item-navigation-menu.css";
+import FontAwesomeIcon from "components/font-awesome/FontAwesomeIcon";
 
 interface Props {
   /** The object with the information to display the item. */
@@ -10,5 +11,9 @@ interface Props {
 export default function ItemNavigationMenu({ item }: Props) {
   const { title } = item;
 
-  return <li className="item-navigation-menu">{title}</li>;
+  return (
+    <li className="item-navigation-menu">
+      {title} <FontAwesomeIcon icon={["fas", "chevron-down"]} />
+    </li>
+  );
 }
