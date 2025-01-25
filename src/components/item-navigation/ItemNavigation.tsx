@@ -1,5 +1,4 @@
 // Project files
-import { useNavigation } from "state/NavigationContext";
 import Navigation from "types/Navigation";
 import "./item-navigation.css";
 
