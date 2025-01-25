@@ -11,17 +11,18 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step5() {
   // Global state
-  const { stepNumber, setStepId, hasCoAplicant, setNavigationItemId } = useNavigation();
+  const { stepId, setStepId, hasCoAplicant, navigationItemId, setNavigationItemId } =
+    useNavigation();
 
   // Methods
   useEffect(() => {
     const overrideNavigationItemId = hasCoAplicant ? "applicant-work-situation" : "work-situation";
 
     setNavigationItemId(overrideNavigationItemId);
-  }, [hasCoAplicant]);
+  }, [navigationItemId, hasCoAplicant]);
 
   function onSubmit() {
-    console.log(`Validating form step #${stepNumber}`);
+    console.log(`Validating form step #${stepId}`);
     nextStep();
   }
 

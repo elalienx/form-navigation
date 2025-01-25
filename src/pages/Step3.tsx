@@ -11,15 +11,21 @@ import { useNavigation } from "state/NavigationContext";
  */
 export default function Step3() {
   // Global state
-  const { stepId, setStepId, hasCoAplicant, setHasCoAplicant, setNavigationItemId } =
-    useNavigation();
+  const {
+    stepId,
+    setStepId,
+    hasCoAplicant,
+    setHasCoAplicant,
+    navigationItemId,
+    setNavigationItemId,
+  } = useNavigation();
 
   // Methods
   useEffect(() => {
     const overrideNavigationItemId = hasCoAplicant ? "applicant-personal-data" : "personal-data";
 
     setNavigationItemId(overrideNavigationItemId);
-  }, [hasCoAplicant]);
+  }, [navigationItemId, hasCoAplicant]);
 
   function onSubmit() {
     console.log(`Validating form step #${stepId}`);
