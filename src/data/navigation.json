@@ -15,7 +15,12 @@
     "id": "step-3-applicant-personal-data"
   },
   {
-    "title": "Co-applicant's data",
+    "title": "-- Your data",
+    "navigationLevel": "primary",
+    "id": "step-3-applicant-personal-data"
+  },
+  {
+    "title": "-- Co-applicant's data",
     "navigationLevel": "secondary",
     "id": "step-4-co-applicant-personal-data"
   },
@@ -25,7 +30,12 @@
     "id": "step-5-applicant-work-situation"
   },
   {
-    "title": "Co-applicant's situation",
+    "title": "-- Your situation",
+    "navigationLevel": "secondary",
+    "id": "step-5-applicant-work-situation"
+  },
+  {
+    "title": "-- Co-applicant's situation",
     "navigationLevel": "secondary",
     "id": "step-6-co-applicant-work-situation"
   },

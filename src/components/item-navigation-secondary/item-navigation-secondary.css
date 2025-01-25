@@ -1,7 +1,9 @@
 .item-navigation-secondary {
   padding: var(--space-small) var(--space-medium);
+  padding-left: 40px;
   background-color: transparent;
   border-radius: var(--space-small);
+  list-style: none;
   font-size: small;
   cursor: pointer;
 

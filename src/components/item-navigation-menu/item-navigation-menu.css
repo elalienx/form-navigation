@@ -4,4 +4,5 @@
   color: var(--color-gray);
   border-radius: var(--space-small);
   list-style: none;
+  cursor: default;
 }
