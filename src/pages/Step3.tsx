@@ -50,6 +50,7 @@ export default function Step3() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
+      <p>🔘 Applicant claims PEP?</p>
       {/* Co Applicant question which alters the lengh of the whole formulary */}
       <div className="question-co-applicant">
         <p>Do you have a co-applicant?</p>

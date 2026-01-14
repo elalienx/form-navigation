@@ -9,14 +9,14 @@ export default function App() {
     <div className="app">
       <h1>Form navigator</h1>
       <p>
-        This is a UX experimentation for testing formulary navigations. Do not
-        submit sensitive data in it.
+        This is a UX experimentation for testing formulary navigations. Do not submit sensitive data
+        in it.
       </p>
       <div className="formulary">
         <Navigation />
         <StepManager />
       </div>
-      <Debug />
+      {/* <Debug /> */}
     </div>
   );
 }

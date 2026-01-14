@@ -25,6 +25,7 @@ export default function Step4() {
         src={Image}
         alt="Mock of the real inferface found on Lendo.se"
       />
+      <p>🔘 Co-applicant claims PEP?</p>
       <Button icon={"arrow-right"} onClick={onSubmit}>
         Next
       </Button>
