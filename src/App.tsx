@@ -5,6 +5,9 @@ import StepManager from "components/step-manager/StepManager";
 import "./styles/style.css";
 
 export default function App() {
+  // Properties
+  const showDebug = false;
+
   return (
     <div className="app">
       <h1>Form navigator</h1>
@@ -16,7 +19,7 @@ export default function App() {
         <Navigation />
         <StepManager />
       </div>
-      {/* <Debug /> */}
+      {showDebug && <Debug />}
     </div>
   );
 }
